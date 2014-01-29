@@ -4,7 +4,7 @@ var path = require('path');
 var yeoman = require('yeoman-generator');
 
 
-var DbmodGenerator = module.exports = function DbmodGenerator(args, options, config) {
+var GnarGenerator = module.exports = function GnarGenerator(args, options, config) {
   yeoman.generators.Base.apply(this, arguments);
 
   this.on('end', function () {
@@ -14,9 +14,9 @@ var DbmodGenerator = module.exports = function DbmodGenerator(args, options, con
   this.pkg = JSON.parse(this.readFileAsString(path.join(__dirname, '../package.json')));
 };
 
-util.inherits(DbmodGenerator, yeoman.generators.Base);
+util.inherits(GnarGenerator, yeoman.generators.Base);
 
-DbmodGenerator.prototype.askFor = function askFor() {
+GnarGenerator.prototype.askFor = function askFor() {
   var cb = this.async();
 
   // have Yeoman greet the user.
@@ -36,14 +36,14 @@ DbmodGenerator.prototype.askFor = function askFor() {
   // }.bind(this));
 };
 
-DbmodGenerator.prototype.app = function app() {
+GnarGenerator.prototype.app = function app() {
   this.mkdir('src');
 
   this.copy('_package.json', 'package.json');
   this.copy('_bower.json', 'bower.json');
 };
 
-DbmodGenerator.prototype.projectfiles = function projectfiles() {
+GnarGenerator.prototype.projectfiles = function projectfiles() {
   this.copy('editorconfig', '.editorconfig');
   this.copy('jshintrc', '.jshintrc');
 };

@@ -4,5 +4,5 @@ node_js:
   - '0.10'
 before_install:
   - currentfolder=${PWD##*/}
-  - if [ "$currentfolder" != 'generator-dbmod' ]; then cd .. && eval "mv $currentfolder generator-dbmod" && cd generator-dbmod; fi
+  - if [ "$currentfolder" != 'generator-gnar' ]; then cd .. && eval "mv $currentfolder generator-gnar" && cd generator-gnar; fi
 

@@ -1,12 +1,12 @@
 {
-  "name": "generator-dbmod",
+  "name": "generator-gnar",
   "version": "0.0.0",
   "description": "A generator for Yeoman",
   "keywords": [
     "yeoman-generator"
   ],
-  "homepage": "https://github.com/gnarmedia/generator-dbmod",
-  "bugs": "https://github.com/gnarmedia/generator-dbmod/issues",
+  "homepage": "https://github.com/gnarmedia/generator-gnar",
+  "bugs": "https://github.com/gnarmedia/generator-gnar/issues",
   "author": {
     "name": "Adam Murphy",
     "email": "",
@@ -15,7 +15,7 @@
   "main": "app/index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/gnarmedia/generator-dbmod.git"
+    "url": "git://github.com/gnarmedia/generator-gnar.git"
   },
   "scripts": {
     "test": "mocha"
