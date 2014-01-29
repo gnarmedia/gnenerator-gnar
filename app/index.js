@@ -37,8 +37,7 @@ DbmodGenerator.prototype.askFor = function askFor() {
 };
 
 DbmodGenerator.prototype.app = function app() {
-  this.mkdir('app');
-  this.mkdir('app/templates');
+  this.mkdir('src');
 
   this.copy('_package.json', 'package.json');
   this.copy('_bower.json', 'bower.json');
