@@ -36,18 +36,27 @@ GnarGenerator.prototype.askFor = function askFor() {
   // }.bind(this));
 };
 
-GnarGenerator.prototype.app = function app() {
-  this.mkdir('src');
-
-  this.copy('_package.json', 'package.json');
-  this.copy('bowerrc', '.bowerrc');
-  this.copy('_bower.json', 'bower.json');
-
-  this.copy('Gruntfile.js', 'Gruntfile.js');
+GnarGenerator.prototype.createDirLayout = function createDirLayout() {
+  this.directory('src', 'src');
 };
 
-GnarGenerator.prototype.projectfiles = function projectfiles() {
-  this.copy('editorconfig', '.editorconfig');
-  this.copy('jshintrc', '.jshintrc');
+GnarGenerator.prototype.git = function git() {
   this.copy('gitignore', '.gitignore');
+};
+
+GnarGenerator.prototype.bower = function bower() {
+  this.copy('bowerrc', '.bowerrc');
+  this.copy('_bower.json', 'bower.json');
+};
+
+GnarGenerator.prototype.packageFile = function packageFile() {
+  this.copy('_package.json', 'package.json');
+};
+
+GnarGenerator.prototype.editorConfig = function editorConfig() {
+  this.copy('editorconfig', '.editorconfig');
+};
+
+GnarGenerator.prototype.jshint = function jshint() {
+  this.copy('jshintrc', '.jshintrc');
 };
