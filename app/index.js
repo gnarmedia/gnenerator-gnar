@@ -22,18 +22,18 @@ DbmodGenerator.prototype.askFor = function askFor() {
   // have Yeoman greet the user.
   console.log(this.yeoman);
 
-  var prompts = [{
-    type: 'confirm',
-    name: 'someOption',
-    message: 'Would you like to enable this option?',
-    default: true
-  }];
+  // var prompts = [{
+  //   type: 'confirm',
+  //   name: 'someOption',
+  //   message: 'Would you like to enable this option?',
+  //   default: true
+  // }];
 
-  this.prompt(prompts, function (props) {
-    this.someOption = props.someOption;
+  // this.prompt(prompts, function (props) {
+    // this.someOption = props.someOption;
 
     cb();
-  }.bind(this));
+  // }.bind(this));
 };
 
 DbmodGenerator.prototype.app = function app() {
