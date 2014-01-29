@@ -40,6 +40,7 @@ GnarGenerator.prototype.app = function app() {
   this.mkdir('src');
 
   this.copy('_package.json', 'package.json');
+  this.copy('bowerrc', '.bowerrc');
   this.copy('_bower.json', 'bower.json');
 };
 
