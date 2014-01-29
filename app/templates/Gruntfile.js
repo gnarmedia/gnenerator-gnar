@@ -36,4 +36,11 @@ module.exports = function (grunt) {
     }
   ]);
 
+  /**
+   * Default task
+   * Run `grunt` on the command line
+   */
+  grunt.registerTask('default', [
+  ]);
+
 };
