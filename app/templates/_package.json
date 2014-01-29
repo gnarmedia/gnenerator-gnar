@@ -1,5 +1,7 @@
 {
-  "name": "package",
+  "name": "dbmod",
   "version": "0.0.0",
+  "description": "DBMOD",
+  "description": "html5, foundation5, coffeescript, sass, scss",
   "dependencies": {}
 }
