@@ -36,8 +36,12 @@ GnarGenerator.prototype.askFor = function askFor() {
   // }.bind(this));
 };
 
-GnarGenerator.prototype.createDirLayout = function createDirLayout() {
-  this.directory('src', 'src');
+AppGenerator.prototype.gruntfile = function gruntfile() {
+  this.template('Gruntfile.js');
+};
+
+AppGenerator.prototype.packageJSON = function packageJSON() {
+  this.template('_package.json', 'package.json');
 };
 
 GnarGenerator.prototype.git = function git() {
@@ -49,14 +53,14 @@ GnarGenerator.prototype.bower = function bower() {
   this.copy('_bower.json', 'bower.json');
 };
 
-GnarGenerator.prototype.packageFile = function packageFile() {
-  this.copy('_package.json', 'package.json');
-};
-
 GnarGenerator.prototype.editorConfig = function editorConfig() {
   this.copy('editorconfig', '.editorconfig');
 };
 
 GnarGenerator.prototype.jshint = function jshint() {
   this.copy('jshintrc', '.jshintrc');
+};
+
+GnarGenerator.prototype.app = function app() {
+  this.directory('src', 'src');
 };
