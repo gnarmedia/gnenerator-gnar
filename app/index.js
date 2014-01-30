@@ -37,7 +37,7 @@ GnarGenerator.prototype.askFor = function askFor() {
 };
 
 GnarGenerator.prototype.gruntfile = function gruntfile() {
-  this.template('Gruntfile.js', 'Gruntfile.js');
+  this.copy('Gruntfile.js', 'Gruntfile.js');
 };
 
 GnarGenerator.prototype.packageJSON = function packageJSON() {
