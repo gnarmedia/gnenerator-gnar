@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "A generator for Yeoman",
   "keywords": [
-    "yeoman-generator"
+    "yeoman-generator, html5, foundation5, coffeescript, sass, scss"
   ],
   "homepage": "https://github.com/gnarmedia/generator-gnar",
   "bugs": "https://github.com/gnarmedia/generator-gnar/issues",

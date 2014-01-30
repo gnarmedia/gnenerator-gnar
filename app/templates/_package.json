@@ -1,16 +1,4 @@
 {
   "name": "<%= _.slugify(appname) %>",
-  "title": "Yeoman generator with front-end boilerplate and build script",
-  "description": "Yeoman generator with front-end boilerplate and build script",
-  "keywords": "html5, foundation5, coffeescript, sass, scss",
-  "url": "http://gnarmedia.com",
-  "author": "Adam Murphy",
-  "copyright": "2014",
-  "version": "0.0.0",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "http://github.com/gnarmedia/generator-gnar.git"
-  },
   "dependencies": {}
 }
