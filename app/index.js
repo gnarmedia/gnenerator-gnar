@@ -36,11 +36,11 @@ GnarGenerator.prototype.askFor = function askFor() {
   // }.bind(this));
 };
 
-AppGenerator.prototype.gruntfile = function gruntfile() {
-  this.template('Gruntfile.js');
+GnarGenerator.prototype.gruntfile = function gruntfile() {
+  this.template('Gruntfile.js', 'Gruntfile.js');
 };
 
-AppGenerator.prototype.packageJSON = function packageJSON() {
+GnarGenerator.prototype.packageJSON = function packageJSON() {
   this.template('_package.json', 'package.json');
 };
 
