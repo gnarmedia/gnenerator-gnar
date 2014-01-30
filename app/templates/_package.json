@@ -1,5 +1,5 @@
 {
-  "name": "generator-gnar",
+  "name": "<%= _.slugify(appname) %>",
   "title": "Yeoman generator with front-end boilerplate and build script",
   "description": "Yeoman generator with front-end boilerplate and build script",
   "keywords": "html5, foundation5, coffeescript, sass, scss",
