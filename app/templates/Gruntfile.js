@@ -34,7 +34,8 @@ module.exports = function (grunt) {
         '<%= project.src %>/js/*.js'
       ]
     }
-  ]);
+
+  });
 
   /**
    * Default task
