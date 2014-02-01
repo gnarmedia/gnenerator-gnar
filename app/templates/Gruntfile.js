@@ -32,6 +32,9 @@ module.exports = function (grunt) {
       ],
       js: [
         '<%= project.src %>/js/*.js'
+      ],
+      html: [
+        '<%= project.src %>/html/*.html'
       ]
     }
 
