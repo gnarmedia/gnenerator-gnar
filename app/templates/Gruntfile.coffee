@@ -20,25 +20,24 @@ module.exports = (grunt) ->
 
     # Set project info
     project:
-      src: "src"
-      dest: "build"
-      html: ["<%= project.src %>/html/*.html"]
+      src: "src"                               # directory to process
+      dest: "build"                            # directory to upload
+      html: ["<%= project.src %>/html/*.html"] # html files
 
-    ###
-      Copy
-      copy files and folders
-      https://github.com/gruntjs/grunt-contrib-copy
-    ###
-    copy:
-      html:
-        src: "<%= project.src %>/html/index.html"
-        dest: "<%= project.dest %>/index.html"
-
+    slim:
+      dist:                                      # Target
+        options:                                 # Target options
+          pretty: "true"                         # Uncompressed
+        files:                                   # Dictionary of files
+          "<%= project.dest %>/index.html": "<%= project.src %>/html/index.html.slim" # 'destination': 'source'
 
   ###
     Default task
     Run `grunt` on the command line
   ###
   grunt.registerTask "default", [
-    "copy"
+    "slim",
+    # "copy",
+    # "useminPrepare",
+    # "usemin"
   ]
