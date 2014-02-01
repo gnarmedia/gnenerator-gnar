@@ -25,8 +25,8 @@ module.exports = function (grunt) {
      */
     project: {
       src: 'src',
-      dist: 'dist',
-      assets: '<%= project.dist %>/assets',
+      dest: 'build',
+      assets: '<%= project.dest %>/assets',
       css: [
         '<%= project.src %>/scss/style.scss'
       ],
