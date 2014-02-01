@@ -13,6 +13,9 @@
  */
 module.exports = function (grunt) {
 
+  // Load grunt tasks automatically
+  require('load-grunt-tasks')(grunt);
+
   /**
    * Generator-Gnar Grunt config
    */
@@ -36,6 +39,18 @@ module.exports = function (grunt) {
       html: [
         '<%= project.src %>/html/*.html'
       ]
+    },
+
+    /**
+     * Copy
+     * copy files and folders
+     * https://github.com/gruntjs/grunt-contrib-copy
+     */
+    copy: {
+      html: {
+        src: '<%= project.src %>/html/index.html',
+        dest: '<%= project.dest %>/index.html'
+      }
     }
 
   });
@@ -45,6 +60,7 @@ module.exports = function (grunt) {
    * Run `grunt` on the command line
    */
   grunt.registerTask('default', [
+    'copy'
   ]);
 
 };
